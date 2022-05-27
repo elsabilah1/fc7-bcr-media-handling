@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: Helvetica, system-ui, sans-serif;
+    scrollbar-width: none;
+  }
+  body::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+@layer components {
+  /* .auth-input {
+    @apply block w-full mb-4 py-3 px-4 border border-neutral02 rounded-md text-xs text-neutral04 shadow-low  hover:outline-none hover:border-darkblue05 focus:outline-none focus:border-darkblue04;
+  } */
+
+  .input-primary {
+    @apply w-80 py-2 px-3 border border-slate-500 rounded-sm text-slate-700 text-xs font-light placeholder:text-slate-600 placeholder:text-xs placeholder:font-light hover:outline-none hover:border-blue-800 focus:outline-none focus:border-blue-800 file:hidden disabled:bg-black/10;
+  }
+  /* 
+  .btn-primary {
+    @apply cursor-pointer border border-darkblue04 bg-darkblue04 text-white text-sm font-bold py-2 px-3 rounded-sm hover:bg-darkblue05 hover:border-darkblue05 active:bg-darkblue03 active:border-darkblue03 shadow-low text-center;
+  }
+
+  .btn-outline {
+    @apply cursor-pointer border border-darkblue04 bg-white text-darkblue04 text-sm font-bold py-2 px-3 rounded-sm hover:border-darkblue05 hover:text-darkblue05 active:border-darkblue03 active:text-darkblue03 shadow-low text-center;
+  }
+
+  .cat-btn-active {
+    @apply text-darkblue04 font-bold text-sm px-3 py-2 border border-darkblue04 rounded-sm bg-darkblue01;
+  }
+
+  .cat-btn {
+    @apply text-darkblue02 font-bold text-sm px-3 py-2 border border-darkblue02 rounded-sm bg-white;
+  } */
+}
